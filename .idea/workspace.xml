@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angular.min.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="angular.min.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/angular.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.6212252">
               <caret line="292" column="10" selection-start-line="292" selection-start-column="10" selection-end-line="292" selection-end-column="10" />
               <folding>
                 <marker date="1448594635308" expanded="true" signature="244864:246124" placeholder="..." />
@@ -98,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sgq.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sgq.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/sgq.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35044247">
-              <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+            <state vertical-scroll-proportion="42.206898">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
                 <marker date="1450088604447" expanded="true" signature="1138:1148" placeholder="..." />
               </folding>
@@ -348,7 +348,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1032" y="-8" width="1040" height="1296" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -728,9 +728,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/sgq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="42.206898">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <marker date="1450088604447" expanded="true" signature="1138:1148" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/singlepageQA.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.538462">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.6212252">
           <caret line="292" column="10" selection-start-line="292" selection-start-column="10" selection-end-line="292" selection-end-column="10" />
           <folding>
             <marker date="1448594635308" expanded="true" signature="244864:246124" placeholder="..." />
@@ -766,27 +787,6 @@
             <marker date="1448594635308" expanded="true" signature="919509:919539" placeholder="..." />
             <marker date="1448594635308" expanded="true" signature="919551:919586" placeholder="..." />
             <marker date="1448594635308" expanded="true" signature="919696:919890" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/singlepageQA.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.538462">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/sgq.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35044247">
-          <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
-          <folding>
-            <marker date="1450088604447" expanded="true" signature="1138:1148" placeholder="..." />
           </folding>
         </state>
       </provider>
