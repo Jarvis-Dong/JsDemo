@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function createFunctions() {
+        var result = [];
+        for (var i = 0; i <= 10; i++) {
+            result[i] = function () {
+                return i;
+                console.log(i);
+            };
+        }
+        return result;
+    }
+    ss = createFunctions();
+    var name = "the window";
+    var object = {
+        name: "My Object",
+        getName: function () {
+            return this.name;
+        }
+    }
+    console.log(object.getName());
+    console.log((object.getName()));
+    console.log((object.getName = object.getName)());
+
+    function orderNumbers(count) {
+        (function () {
+            for (var i = 0; i < count; i++) {
+                alert(i);
+
+            }
+        })();
+
+        alert(i);
+    }
+
+    var num = 0;
+    var max = 20;
+//    function increasenum(){
+//        num++;
+//        console.log(num);
+//        if (num == max) {
+//            clearInterval();
+//            alert("allchecked");
+//        }
+//    }
+//    internal = setInterval(increasenum,500);
+
+    function  increasenumFake(){
+        num++;
+        console.log(num);
+        if(num <= max){
+            setTimeout(increasenumFake,500);
+        }
+        else {
+            console.log("done");
+        }
+
+    }
+    setTimeout(increasenumFake,500);
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function sum(num1, num2) {
+        if (num1 < num2) {
+            return num2 - num1;
+        }
+        else {
+            return num1 - num2;
+        }
+
+    }
+    function howManyArgs() {
+        alert(arguments.length);
+
+    }
+    function doAdd() {
+        if (arguments.length == 1) {
+            console.log(arguments[0] + 10);
+        }
+        else if (arguments.length == 2) {
+            console.log(arguments[0] + arguments[1]);
+        }
+    }
+    function doAdd2(num1, num2) {
+        arguments[1] = 10;
+        alert(arguments[0] + num2);
+
+    }
+    //        var obj1 = new Object();
+    //        var obj2 = obj1;
+    //        obj1.name = "nicholas"
+    //        alert("obj2.name:" + obj2.name);
+    //        obj2.name = "jarvis";
+    //        alert("obj1.name" + obj1.name);
+
+    var color = "blue";
+    function changeColor() {
+        if (color === "blue") {
+            color = "red"
+        }
+        else {
+            color = "blue";
+        }
+
+    }
+    changeColor();
+
+    //       alert("Color is now " +color);
+    if (true) {
+        ys = "blue";
+
+    }
+    //        alert(ys);
+
+
+    var userChoice = prompt("Do you choose rock, paper or scissors?");
+    var computerChoice = 0;
+    function computerRandom() {
+        computerChoice = Math.random();
+        if (computerChoice < 0.34) {
+            computerChoice = "rock";
+        } else if (computerChoice <= 0.67) {
+            computerChoice = "paper";
+        } else {
+            computerChoice = "scissors";
+        }
+        console.log("Computer: " + computerChoice);
+        return computerChoice;
+    }
+    computerRandom();
+
+    function compare(choice1, choice2) {
+        if (choice1 === choice2) {
+            userChoice = prompt("Tie,game on again,Do you choose rock, paper or scissors?");
+            computerRandom();
+            compare(userChoice, computerChoice);
+        }
+        else if (choice1 === "rock") {
+            if (choice2 === "scissors") {
+                alert("Rock wins");
+            }
+            else {
+                alert("Paper wins");
+            }
+        }
+        else if (choice1 === "paper") {
+            if (choice2 === "rock") {
+                alert("paper wins");
+            }
+            else {
+                alert("Scissors win");
+            }
+        }
+        else if (choice1 === "scissors") {
+            if (choice2 === "paper") {
+                alert("Scissors win");
+            }
+            else {
+                alert("Rock wins");
+            }
+        }
+
+        else {
+            alert("error")
+        }
+
+    }
+    ;
+
+    compare(userChoice, computerChoice);
+     var person = {
+         name: "Jarvis",
+         age: "24",
+         job:"front end dev",
+
+         sayName:function(){
+             console.log(this.name);
+         }
+     }
+
+
+
+</script>
+
+</body>
+</html>

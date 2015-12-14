@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularNote</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/angular.js"></script>
+</head>
+<style>
+  #myNote{
+      text-align: center;
+      margin:0 auto;
+
+  }
+</style>
+<body>
+  <div id="myNote" ng-app="myNote" ng-controller="myNoteCtrl">
+     <h3>我的笔记</h3>
+      <textarea ng-model="note" name="" id="" cols="30" rows="10"></textarea>
+      <div class="button-group">
+          <button ng-click="save()" class="btn">保存</button>
+          <button ng-click="clear()" class="btn">清楚</button>
+      </div>
+        <p>剩余字数：<b>{{left()}}</b></p>
+  </div>
+
+  <div ng-app="myApp2" ng-controller="personCtrl">
+
+      <p><input type="text" ng-model="test"></p>
+      <select name="" id="" ng-model="sex">
+          <option value="男">男</option>
+          <option value="女">女</option>
+      </select>
+
+      <ul>
+          <li ng-repeat="x in names | filter:sex | orderBy:'name'">
+              {{ (x.name | uppercase) + ', ' + x.country }}
+          </li>
+      </ul>
+
+  </div>
+  <script>
+      var app = angular.module("myNote",[]);
+      app.controller("myNoteCtrl",function($scope){
+          $scope.note="test";
+          $scope.left=function(){return 100 - $scope.note.length;};  //如果不是一个function的话就做不到时时刷新
+          $scope.clear = function(){$scope.note="";};
+          $scope.save = function () {
+              console.log("yes i'm saving.");
+          };
+      });
+
+      angular.module('myApp2', []).controller('personCtrl', function($scope) {
+          $scope.names = [
+              {name:'jani',country:'Norway',sex:'男'},
+              {name:'dani',country:'dess',sex:'男'},
+              {name:'gani',country:'dsaa',sex:'男'},
+              {name:'hani',country:'joiusaa',sex:'女'},
+          ];
+      });
+
+  </script>
+</body>
+</html>
