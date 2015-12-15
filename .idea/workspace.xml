@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4852395c-1217-4ed9-b0a4-bc1fd20cbf7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sgq.js" afterPath="$PROJECT_DIR$/js/sgq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/singlepageQA.html" afterPath="$PROJECT_DIR$/singlepageQA.html" />
     </list>
     <ignored path="nhui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -209,7 +206,7 @@
       <file leaf-file-name="singlepageQA.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/singlepageQA.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8076925">
+            <state vertical-scroll-proportion="-7.6153846">
               <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -222,10 +219,10 @@
       <file leaf-file-name="sgq.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/sgq.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3166523">
-              <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+            <state vertical-scroll-proportion="2.050043">
+              <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
               <folding>
-                <marker date="1450165851644" expanded="true" signature="1139:1149" placeholder="..." />
+                <marker date="1450168233068" expanded="true" signature="1139:1149" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1022,7 +1019,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/singlepageQA.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.8076925">
+        <state vertical-scroll-proportion="-7.6153846">
           <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1033,10 +1030,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/sgq.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3166523">
-          <caret line="127" column="32" selection-start-line="127" selection-start-column="32" selection-end-line="127" selection-end-column="32" />
+        <state vertical-scroll-proportion="2.050043">
+          <caret line="124" column="4" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="4" />
           <folding>
-            <marker date="1450165851644" expanded="true" signature="1139:1149" placeholder="..." />
+            <marker date="1450168233068" expanded="true" signature="1139:1149" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -43,21 +43,17 @@ var consoleHtml = function () {
     }
 };
 function checkform() {
-    if (count > 10) {
-        var radios = $('#radio-container>input');
-        console.log(radios.length);
+    if (count >= 0) {
+        var radios = $('#radio-container input');
         for (var i = 0; i < radios.length; i++) {
             if (radios[i].checked == true) {
-            }
-            else {
-                return false;
+                return true;
             }
         }
         ;
         console.log("check了");
     }
     else {
-        change();
         console.log("没check");
         return true;
     }
@@ -138,12 +134,13 @@ function last() {
 };
 $(function () {
     $("#next").on("click", function () {
-        
-            count++;
-            change();
-
-
-
+            if (checkform()){
+                count++;
+                change();
+            }
+        else{
+                alert("需要填写");
+            }
     });
     $("#last").on("click", function () {
         if (count > 0) {
@@ -152,7 +149,6 @@ $(function () {
         } else {
             alert("这已经是第一页了");
         }
-
     })
 });
 
