@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4852395c-1217-4ed9-b0a4-bc1fd20cbf7d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/sgq.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/sgq.js" afterPath="$PROJECT_DIR$/js/sgq.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/singlepageQA.html" afterPath="$PROJECT_DIR$/singlepageQA.html" />
-    </list>
+    <list default="true" id="4852395c-1217-4ed9-b0a4-bc1fd20cbf7d" name="Default" comment="" />
     <ignored path="nhui.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
