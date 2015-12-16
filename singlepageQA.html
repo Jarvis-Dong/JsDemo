@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>SinglePageQA</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/sgq.css">
     <script src="http://apps.bdimg.com/libs/angular.js/1.3.9/angular.min.js"></script>
 
     <script src="js/jquery.js"></script>
@@ -11,25 +12,27 @@
 </head>
 <body>
 <div class="center-block col-xs-12 col-sm-8" style="margin: 0 auto; float: none ">
-    <p id="question">题目</p>
+    <div class="question-container">
+        <p id="question">题目</p>
 
 
-    <div class="radio-container" id="radio-container">
-        <p>这里是选项</p>
+        <div class="radio-container" id="radio-container">
+            <p>这里是选项</p>
 
-    </div>
-    <button class="btn-block " id="last">上一题</button>
-    <button class="btn-block btn-primary" id="next">下一题</button>
-
-
-    <div id="console" style="background-color: #dddddd ; color:#FFFFFF; border-radius: 5px">
-
-
+        </div>
+        <button class="btn btn-block " id="last">上一题</button>
+        <button class="btn btn-block btn-primary" id="next">下一题</button>
     </div>
 
-    <div >
-        <h2>利用jquery-json将js对象转化为JSON床</h2>
-        <INPUT TYPE="button" VALUE="生成JSON串" ONCLICK="" id="testBut"><br/>
+    <div id="console" style="background-color: #383232 ; color:#fff; border-radius: 5px;padding: 20px">
+         <p style="color: #f0ad4e">Console:</p>
+
+
+    </div>
+
+    <div style="background-color: #383232 ; color:#fff; border-radius: 5px;padding: 20px">
+        <h2 style="color: #ac65a9">利用jquery-json将js对象转化为JSON床</h2>
+        <INPUT style="color: #3c3c3c" TYPE="button" VALUE="生成JSON串" ONCLICK="" id="testBut"><br/>
 
         <div id="showDiv" style="display:none">
 

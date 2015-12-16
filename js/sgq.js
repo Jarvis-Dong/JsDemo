@@ -15,22 +15,53 @@ var allQuestions = [
         correctAnswer: 0
     },
     {
-        question: "22222222222222222",
+        question: "1+1 = ?",
         choices: [
-            "David Cameron",
-            "Gordon Brown",
-            "Tony Blair"],
-        correctAnswer: 2
+            "1",
+            "2",
+            "3",
+            "4"],
+        correctAnswer: 1
     },
     {
-        question: "3333333333333333333?",
+        question: "Jquery 是否是一种语言",
         choices: [
-            "David Cameron",
-            "Gordon Brown",
-            "Winston Churchill",
-            "Tony Blair"],
-        correctAnswer: 0
+            "是一种语言",
+            "不是"
+        ],
+        correctAnswer: 1
+    },
+    {
+        question: "请问这个应用作者的生日是几号",
+        choices: [
+            "9.15",
+            "9.16",
+            "9.17",
+            "9.12"
+        ],
+        correctAnswer: 3
+    },
+    {
+        question: "那他又是什么星座呢？",
+        choices: [
+            "天蝎座",
+            "处女座",
+            "摩羯座",
+            "狮子座"
+        ],
+        correctAnswer: 1
+    },
+    {
+        question: "前端工程师最不可能使用的工具是？",
+        choices: [
+            "excell",
+            "eclipse",
+            "webStorm",
+            "Mysql"
+        ],
+        correctAnswer: 3
     }
+
 ];
 
 var questionNum = allQuestions.length;
@@ -42,6 +73,7 @@ var consoleHtml = function () {
         $("#console").append(template);
     }
 };
+//此方法用来检测用户有没有选择选项
 function checkform() {
     if (count >= 0) {
         var radios = $('#radio-container input');
@@ -60,6 +92,7 @@ function checkform() {
     ;
 
 };
+//计算总成绩方法
 function consoleScore() {
     userScore = 0;
     //遍历之后计算成绩
@@ -68,23 +101,27 @@ function consoleScore() {
             userScore += eachQuestionMark;
         }
     }
-}
+};
+//在数组中创建userChoice的值
+function createUserChoice(){
+    var radios = $(".optionRadios");
+    for (var j = 0; j < radios.length; j++) {
+        if (radios[j].checked) {
+            userChoice = radios[j].value;
+            allQuestions[count - 1].userChoice = userChoice;
+            if (allQuestions[count - 1].userChoice == allQuestions[count - 1].correctAnswer) {
+                console.log("true");
+            }
+        }
+    }
+    ;
+};
+//切换页面问题的方法
 function change() {
     if (count >= allQuestions.length) {
         var userChoice = 99;
-        var radios = $(".optionRadios");
-        for (var j = 0; j < radios.length; j++) {
-            if (radios[j].checked) {
-                userChoice = radios[j].value;
-                allQuestions[count - 1].userChoice = userChoice;
-                if (allQuestions[count - 1].userChoice == allQuestions[count - 1].correctAnswer) {
-                    console.log("true");
-                }
-            }
-        }
-        ;
+        createUserChoice();
         consoleScore();
-        console.log(userScore);
         $("#question").html("");
         $("#radio-container").html("<p>您的成绩是：" + userScore + "</p>")
     }
@@ -93,18 +130,7 @@ function change() {
         var userChoice = 99;
         $("#question").html(allQuestions[count].question);
         var choices = allQuestions[count].choices;
-        var radios = $(".optionRadios");
-        for (var j = 0; j < radios.length; j++) {
-            if (radios[j].checked) {
-                userChoice = radios[j].value;
-                allQuestions[count-1].userChoice = userChoice;
-                if (allQuestions[count-1].userChoice == allQuestions[count-1] //这边的count为什么要-1 点击change 之后应该先做完if语句再走count++啊
-                        .correctAnswer) {
-                    console.log("true");
-                }
-            }
-        }
-        ;
+        createUserChoice();
         $("#radio-container").html("");
         for (var i = 0; i < choices.length; i++) {
             var template = "<div class='radio'><label><input class='optionRadios' type='radio' name='optionsRadios' id='optionRadios" + i + "'value='" + i + "'>" + choices[i] + "</label></div>"
