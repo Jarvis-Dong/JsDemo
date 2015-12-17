@@ -4,6 +4,13 @@
 var count = -1;  //现在是从-1开始 有没有办法从0开始
 var fullScore = 100;
 var userScore = 0;
+var a ='1.565555555555';
+var b ='2.0';
+var correctCount = 0;
+
+console.log((a* b).toFixed(2));
+//console.log((a).toFixed(2));
+console.log(typeof (a*1.0));
 var allQuestions = [
     {
         question: "Who is Prime Minister of the United Kingdom?",
@@ -95,12 +102,15 @@ function checkform() {
 //计算总成绩方法
 function consoleScore() {
     userScore = 0;
+    correctCount = 0;
+
     //遍历之后计算成绩
     for (var i = 0; i < allQuestions.length; i++) {
         if (allQuestions[i].correctAnswer == allQuestions[i].userChoice) {
-            userScore += eachQuestionMark;
+            correctCount++;
         }
     }
+    userScore = (correctCount/allQuestions.length*100).toFixed(2);
 };
 //在数组中创建userChoice的值
 function createUserChoice(){
